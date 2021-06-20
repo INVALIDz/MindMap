@@ -11,6 +11,9 @@ import { handlePropagation, downloadFile } from '../../methods/assistFunctions';
 import ToolButton from '../../components/ToolButton';
 import MindmapTitle from '../../components/MindmapTitle';
 import Popup from '../../components/Popup';
+import html2canvas from 'html2canvas';
+import mindmapExporter from '../../methods/mindmapExporter';
+import axios from 'axios';
 
 const Nav = () => {
     const [popup, setPopup] = useState(popupType.NONE);
@@ -29,8 +32,17 @@ const Nav = () => {
     };
 
     const handleDownload = () => {
-        const url = `data:text/plain,${encodeURIComponent(JSON.stringify(mindmap))}`;
-        downloadFile(url, `${title}.rmf`);
+        
+        
+        html2canvas(document.getElementById(refer.MINDMAP_ID)).then(canvas => {
+            let url = canvas.toDataURL('image/png');
+            downloadFile(url, `${title}.png`);
+            const data = {content:mindmapExporter(mindmap, "KM")}
+            alert(data)
+            axios.post("http://localhost:4000/save", data).then(() => alert(`Mindmap saved`))
+              .catch(err => {
+                alert(err)})
+        });
     };
 
     const handleOpenFile = () => {

@@ -1,3 +1,4 @@
+
 const exportNodeToText = (node, layer, format) => {
     switch (format) {
         case 'MD':
@@ -48,7 +49,7 @@ const exportMindmapToJSON = (mindmap, format) => {
             const km_mindmap = {root: copyNodeData(format, {}, mindmap)};
             return JSON.stringify(km_mindmap);
         default:
-            return;
+            return JSON.stringify(km_mindmap);
     }
 };
 

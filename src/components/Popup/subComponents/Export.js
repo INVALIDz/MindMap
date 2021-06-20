@@ -8,6 +8,7 @@ import {downloadFile} from '../../../methods/assistFunctions';
 import mindmapExporter from '../../../methods/mindmapExporter';
 import {Highlight, ButtonSet} from '../common/styledComponents';
 
+
 const Export = ({handleClosePopup}) => {
     const {mindmap: {state: mindmap}, global: {state: {title}}} = useContext(context);
     const {clearNodeStatus} = useMindmap();

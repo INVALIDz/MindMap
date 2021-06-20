@@ -63,7 +63,7 @@ async(req,res)=>{
                 res.json({token})
             }
         )
-       
+        
     }
     catch(err){
         console.error(err.message)

@@ -56,7 +56,7 @@ const useMindmap = () => {
             const new_node = {
                 node_id
               };
-              alert("EDITNG NODE")
+             
               axios.post('http://localhost:4000/edit', new_node);
         },
         changeText: (node_id, text) => {
@@ -65,7 +65,7 @@ const useMindmap = () => {
                 node_id,
                text,
               };
-              alert("CHANGING TEXT")
+            
               axios.post('http://localhost:4000/changeText', new_node);
         },
         editNodeInfo:(node_id,info)=>{
@@ -74,12 +74,12 @@ const useMindmap = () => {
                 node_id,
                 info,
               };
-              alert("EDITING INFO")
+             
               axios.post('http://localhost:4000/editNodeInfo', new_node);                      
           },
         selectNode: (node_id, select_by_click) => {
             nDispatch(nodeStatusAction.setSelect(node_id, select_by_click));
-            alert("SELECTING")
+           
         },
         deleteNode: (node_id, parent_id) => {
             mDispatch(mindmapAction.deleteNode(node_id, parent_id));

@@ -10,6 +10,7 @@ const config=require('config')
 const auth=require('./middleware/auth')
 
 const Point=require('./node')
+const Mindmap=require('./mindmap')
 const User=require('./user')
 
 var bodyParser = require('body-parser')
@@ -34,39 +35,69 @@ app.use('/api/auth',require('./routes/api/auth'))
 app.use('/api/user',require('./routes/api/user'))
 
 
-app.get("/",auth,async(req,res)=>{
+app.get("/",async(req,res)=>{
     console.log("New request!")
     const user=new Point({title:'theme',parent:"Null",Children:["branch1","branch2","branch3"]})
     await user.save()
     res.sendFile('index.html', {root: __dirname})
 })
+app.get("/landing",(req,res)=>{ 
+    console.log("New request!")
+    res.sendFile('./client/index.html', {root: __dirname})
+})
+app.get('/interface',(req,res)=>{ 
+    console.log("New request!")
+    res.sendFile('./client/interface.html', {root: __dirname})
+})
 app.get("/2.48a753dc.chunk.css",(req,res)=>{
     console.log("New request!")
     res.sendFile('build/static/css/2.48a753dc.chunk.css', {root: __dirname})
 })
-app.get("/main.5e80d1da.chunk.css",(req,res)=>{
+app.get("/2.48a753dc.chunk.css.map",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/css/main.ff8928ef.chunk.css', {root: __dirname})
+    res.sendFile('build/static/css/2.48a753dc.chunk.css.map', {root: __dirname})
 })
-app.get("/2.b279e3d9.chunk.js",(req,res)=>{
+app.get("/main.ec1732f3.chunk.css",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/js/2.b279e3d9.chunk.js', {root: __dirname})
+    res.sendFile('build/static/css/main.ec1732f3.chunk.css', {root: __dirname})
 })
-app.get("/main.5e80d1da.chunk.js",(req,res)=>{
+app.get("/main.ec1732f3.chunk.css.map",(req,res)=>{
+    console.log("New request!")
+    res.sendFile('build/static/css/main.ec1732f3.chunk.css.map', {root: __dirname})
+})
+app.get("/2.927a612b.chunk.js",(req,res)=>{
+    console.log("New request!")
+    res.sendFile('build/static/js/2.927a612b.chunk.js', {root: __dirname})
+})
+app.get("/2.927a612b.chunk.js.map",(req,res)=>{
+    console.log("New request!")
+    res.sendFile('build/static/js/2.927a612b.chunk.js.map', {root: __dirname})
+})
+app.get("/main.3a19fc9a.chunk.js",(req,res)=>{
     
     console.log("New request!")
-    res.sendFile('build/static/js/main.5e80d1da.chunk.js', {root: __dirname})
+    res.sendFile('build/static/js/main.3a19fc9a.chunk.js', {root: __dirname})
+})
+app.get("/main.3a19fc9a.chunk.js.map",(req,res)=>{
+    
+    console.log("New request!")
+    res.sendFile('build/static/js/main.3a19fc9a.chunk.js.map', {root: __dirname})
 })
 
-app.post("/create",async(req,res)=>{
+app.post("/save",async(req,res)=>{
    console.log(req.body)
-   const newNode = {
-        NodeID:req.body.node_id,
-        NewNodeID: req.body.new_node_id,
-    }
-    const n=await new Point({id:newNode.NewNodeID,content:'新建节点',parent:newNode.NodeID})
-    await n.save()
+    const k=await new Mindmap({content:req.body.content})
+    await k.save()
 })
+app.post("/create",async(req,res)=>{
+    console.log(req.body)
+    const newNode = {
+         NodeID:req.body.node_id,
+         NewNodeID: req.body.new_node_id,
+     }
+     const n=await new Point({id:newNode.NewNodeID,content:'新建节点',parent:newNode.NodeID})
+     await n.save()
+ })
 app.post("/changeText",async(req,res)=>{
     const newNode =req.params
     await console.log(req.body.node_id)
