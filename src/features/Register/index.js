@@ -11,13 +11,7 @@ const Register=()=>{
     password:'',
     password2:''
   })
-  useEffect(() => {
-    var div = document.getElementById('fullscreen-container');
-    if(!show)
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-      } )   // Update the document title using the browser API    document.title = `You clicked ${count} times`;  });
+     // Update the document title using the browser API    document.title = `You clicked ${count} times`;  });
   const {show,name,email,password,password2}=formData
   const onClick = () => {
     setFormData({...formData,show:false})
@@ -31,11 +25,10 @@ const Register=()=>{
    alert(formData)
   }
 
-  if (show) {
     return (
-      <div id="fullscreen-container">
+      <div id="fullscreen-container"style={{ display: show ? "block" : "none" }}>
         <div className="form-popup">
-          <button className="close" onClick={onClick} >x</button>
+          <button className="close" onClick={onClick} > </button>
           <h1 className="large text-primary">Sign Up</h1>
           <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
           <form className="form" onSubmit={e => onSubmit(e)}>
@@ -76,6 +69,8 @@ const Register=()=>{
           </form>
           <p className="my-1">
             Already have an account? <a href="login.html">Sign In</a>
+           <p> Without an account you can only create one mindmap locally, which will be lost
+           if cookies are cleared.</p>
           </p>
         </div>
       </div>)
@@ -85,9 +80,7 @@ const Register=()=>{
 
 
 
-  }
-  else {
-    return (null)
-  }
+  
+  
 }
 export default Register

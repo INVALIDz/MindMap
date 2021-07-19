@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e64fcb4926584e21c5f8f5865253ac6",
+    "revision": "27f22d0cc8a00d701dcad718b39230dc",
     "url": "/RMind-Demo/index.html"
   },
   {
-    "revision": "14c7653a311ad3f0ec51",
+    "revision": "144a3ce3312d63a09061",
     "url": "/RMind-Demo/static/css/2.48a753dc.chunk.css"
   },
   {
-    "revision": "87d78a165c0008aa4e3c",
-    "url": "/RMind-Demo/static/css/main.ec1732f3.chunk.css"
+    "revision": "c4ce9c272a439b39c121",
+    "url": "/RMind-Demo/static/css/main.b4289c54.chunk.css"
   },
   {
-    "revision": "14c7653a311ad3f0ec51",
-    "url": "/RMind-Demo/static/js/2.927a612b.chunk.js"
+    "revision": "144a3ce3312d63a09061",
+    "url": "/RMind-Demo/static/js/2.1d893cc8.chunk.js"
   },
   {
-    "revision": "76c1bde1e3f0388970cd",
-    "url": "/RMind-Demo/static/js/3.95fbed6a.chunk.js"
+    "revision": "d5d4c36460e0e9e73579",
+    "url": "/RMind-Demo/static/js/3.8cac930e.chunk.js"
   },
   {
-    "revision": "87d78a165c0008aa4e3c",
-    "url": "/RMind-Demo/static/js/main.3a19fc9a.chunk.js"
+    "revision": "c4ce9c272a439b39c121",
+    "url": "/RMind-Demo/static/js/main.5786c88d.chunk.js"
   },
   {
-    "revision": "1900f7952951fb039fe6",
-    "url": "/RMind-Demo/static/js/runtime~main.141bcb7d.js"
+    "revision": "b488d5d1f0a7ff96427a",
+    "url": "/RMind-Demo/static/js/runtime~main.34fdd243.js"
   },
   {
     "revision": "0a267abaf4c9d30b8fd7c77cc19625f3",

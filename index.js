@@ -57,31 +57,31 @@ app.get("/2.48a753dc.chunk.css.map",(req,res)=>{
     console.log("New request!")
     res.sendFile('build/static/css/2.48a753dc.chunk.css.map', {root: __dirname})
 })
-app.get("/main.ec1732f3.chunk.css",(req,res)=>{
+app.get("/main.b4289c54.chunk.css",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/css/main.ec1732f3.chunk.css', {root: __dirname})
+    res.sendFile('build/static/css/main.b4289c54.chunk.css', {root: __dirname})
 })
-app.get("/main.ec1732f3.chunk.css.map",(req,res)=>{
+app.get("/main.b4289c54.chunk.css.map",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/css/main.ec1732f3.chunk.css.map', {root: __dirname})
+    res.sendFile('build/static/css/main.b4289c54.chunk.css.map', {root: __dirname})
 })
-app.get("/2.927a612b.chunk.js",(req,res)=>{
+app.get("/2.1d893cc8.chunk.js",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/js/2.927a612b.chunk.js', {root: __dirname})
+    res.sendFile('build/static/js/2.1d893cc8.chunk.js', {root: __dirname})
 })
-app.get("/2.927a612b.chunk.js.map",(req,res)=>{
+app.get("/2.1d893cc8.chunk.js.map",(req,res)=>{
     console.log("New request!")
-    res.sendFile('build/static/js/2.927a612b.chunk.js.map', {root: __dirname})
+    res.sendFile('build/static/js/2.1d893cc8.chunk.js.map', {root: __dirname})
 })
-app.get("/main.3a19fc9a.chunk.js",(req,res)=>{
+app.get("/main.5786c88d.chunk.js",(req,res)=>{
     
     console.log("New request!")
-    res.sendFile('build/static/js/main.3a19fc9a.chunk.js', {root: __dirname})
+    res.sendFile('build/static/js/main.5786c88d.chunk.js', {root: __dirname})
 })
-app.get("/main.3a19fc9a.chunk.js.map",(req,res)=>{
+app.get("/main.5786c88d.chunk.js.map",(req,res)=>{
     
     console.log("New request!")
-    res.sendFile('build/static/js/main.3a19fc9a.chunk.js.map', {root: __dirname})
+    res.sendFile('build/static/js/main.5786c88d.chunk.js.map', {root: __dirname})
 })
 
 app.post("/save",async(req,res)=>{

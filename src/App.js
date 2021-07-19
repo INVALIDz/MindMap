@@ -11,15 +11,15 @@ import ReactDOM from 'react-dom'
 const App = () => {
     
     return (
-    <Router>
+    
     <Provider>
         <ThemeProvider>
-        <Route exact path='/' component={withRouter(Nav)}/>
-        <Route exact path='/' component={withRouter(Main)}/>
-        <Route exact path='/' component={withRouter(Register)}/>      
+        <Nav/>
+        <Main/>
+        <Register/> 
         </ThemeProvider>
     </Provider>
-    </Router>);
+    );
 };
 
 export default App;

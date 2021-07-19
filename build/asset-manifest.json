@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/RMind-Demo/static/css/main.ec1732f3.chunk.css",
-    "main.js": "/RMind-Demo/static/js/main.3a19fc9a.chunk.js",
-    "main.js.map": "/RMind-Demo/static/js/main.3a19fc9a.chunk.js.map",
-    "runtime~main.js": "/RMind-Demo/static/js/runtime~main.141bcb7d.js",
-    "runtime~main.js.map": "/RMind-Demo/static/js/runtime~main.141bcb7d.js.map",
+    "main.css": "/RMind-Demo/static/css/main.b4289c54.chunk.css",
+    "main.js": "/RMind-Demo/static/js/main.5786c88d.chunk.js",
+    "main.js.map": "/RMind-Demo/static/js/main.5786c88d.chunk.js.map",
+    "runtime~main.js": "/RMind-Demo/static/js/runtime~main.34fdd243.js",
+    "runtime~main.js.map": "/RMind-Demo/static/js/runtime~main.34fdd243.js.map",
     "static/css/2.48a753dc.chunk.css": "/RMind-Demo/static/css/2.48a753dc.chunk.css",
-    "static/js/2.927a612b.chunk.js": "/RMind-Demo/static/js/2.927a612b.chunk.js",
-    "static/js/2.927a612b.chunk.js.map": "/RMind-Demo/static/js/2.927a612b.chunk.js.map",
-    "static/js/3.95fbed6a.chunk.js": "/RMind-Demo/static/js/3.95fbed6a.chunk.js",
-    "static/js/3.95fbed6a.chunk.js.map": "/RMind-Demo/static/js/3.95fbed6a.chunk.js.map",
+    "static/js/2.1d893cc8.chunk.js": "/RMind-Demo/static/js/2.1d893cc8.chunk.js",
+    "static/js/2.1d893cc8.chunk.js.map": "/RMind-Demo/static/js/2.1d893cc8.chunk.js.map",
+    "static/js/3.8cac930e.chunk.js": "/RMind-Demo/static/js/3.8cac930e.chunk.js",
+    "static/js/3.8cac930e.chunk.js.map": "/RMind-Demo/static/js/3.8cac930e.chunk.js.map",
     "index.html": "/RMind-Demo/index.html",
-    "precache-manifest.a6b8cc9410a453e66ba4d59a50bbf38a.js": "/RMind-Demo/precache-manifest.a6b8cc9410a453e66ba4d59a50bbf38a.js",
+    "precache-manifest.9dac9fecf2fe7d081a92e65f3f3caad9.js": "/RMind-Demo/precache-manifest.9dac9fecf2fe7d081a92e65f3f3caad9.js",
     "service-worker.js": "/RMind-Demo/service-worker.js",
     "static/css/2.48a753dc.chunk.css.map": "/RMind-Demo/static/css/2.48a753dc.chunk.css.map",
-    "static/css/main.ec1732f3.chunk.css.map": "/RMind-Demo/static/css/main.ec1732f3.chunk.css.map",
+    "static/css/main.b4289c54.chunk.css.map": "/RMind-Demo/static/css/main.b4289c54.chunk.css.map",
     "static/media/zwicon.css": "/RMind-Demo/static/media/zwicon.d7e439ce.ttf"
   }
 }
