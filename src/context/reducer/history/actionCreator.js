@@ -19,6 +19,8 @@ import axios from 'axios';
 export const setHistory = (mindmap, cur_node) => ({
     type: actionTypes.SET_HISTORY,
     data: mindmap ? ({mindmap, cur_node}) : null
+
+
     
 });
 
